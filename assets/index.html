@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Assets and Liabilities - Retirement Planner</title>
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/color-brewer.min.css">
+        <link href="../extra.css" rel="stylesheet">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="..">Retirement Planner</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="../intro/">Home</a>
+                            </li>
+                            <li >
+                                <a href="..">Overview</a>
+                            </li>
+                            <li class="active">
+                                <a href="./">Assets and Liabilities</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li >
+                                <a rel="next" href="..">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="disabled">
+                                <a rel="prev" >
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#catagories">Catagories</a></li>
+        <li class="main "><a href="#columns">Columns</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<p>Six categories to define assets and liabilites are available on this tab.  These categories include:</p>
+<ul>
+<li>Cash </li>
+<li>Real Estate </li>
+<li>Vehicle </li>
+<li>Investments </li>
+<li>Other Assets </li>
+<li>Other Liabilities </li>
+</ul>
+<p>Each catagory is identified in figure below with numbered items call outs.  The columns are identified with lettered call outs in the figure below.  The corresponding cell for each row and columsn is used to provide the associated information i.e. descriptions, balances, value, monthly payments.  Each row is automatically determined to be either an Asset or Liability.  For an entry to be classified as an Asset it must contain a Description and Current Value without a Monthly Payment.  For an entry to be classified as a Liability it must contain a Description, Current Value and Monthly Payment.</p>
+<p>Entries in the Real Estate and Vehicle categories have that data linked into fields in the <strong>Budget</strong> tab.  </p>
+<p>Entries in the Investment category of this tab are used to populate fields in the <strong>Investments</strong> tab.</p>
+<h3 id="catagories">Catagories</h3>
+<table>
+<thead>
+<tr>
+<th align="center">Label</th>
+<th align="center">Title</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><code>1</code></td>
+<td align="center">CASH</td>
+<td align="left">Catagory to enter cash related assets. These entries are not included in the <strong>Retirement</strong> tab field "(9) Starting Retirement Savings".</td>
+</tr>
+<tr>
+<td align="center"><code>2</code></td>
+<td align="center">REAL ESTATE</td>
+<td align="left">Catagory to enter one real estate property. If a payment is defined the value will be included in the <strong>Budget</strong> tab in the Housing expenses.</td>
+</tr>
+<tr>
+<td align="center"><code>3</code></td>
+<td align="center">VEHICLE</td>
+<td align="left">Catagory to enter information for two vehicles.  If a payment is defined the value will be included in the <strong>Budget</strong> tab in the Transportation expenses.</td>
+</tr>
+<tr>
+<td align="center"><code>4</code></td>
+<td align="center">INVESTMENTS</td>
+<td align="left">Catagory to enter up to tweleve investments.  Most common types include 401K, IRA, Stocks, etc. These <em>Current Value</em> entry for this row will populate the Year 1 beginning value for the investment shown on the <strong>Investment</strong> tab.   If the <em>Catagory ID</em> column for a row is blank the investment will <strong>not</strong> show on the Investment tab.</td>
+</tr>
+<tr>
+<td align="center"><code>5</code></td>
+<td align="center">OTHER ASSETS</td>
+<td align="left">Catagory to enter assets to be tracked but not included in the <strong>Retirement</strong> tab field "(9) Starting Retirement Savings".</td>
+</tr>
+<tr>
+<td align="center"><code>6</code></td>
+<td align="center">OTHER LIABILITIES</td>
+<td align="left">Catagory to enter liabilities to be tracked but not included in the <strong>Budget</strong> tab.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="columns">Columns</h3>
+<table>
+<thead>
+<tr>
+<th align="center">Label</th>
+<th align="center">Title</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><code>A</code></td>
+<td align="center">Catagory</td>
+<td align="left">The above mentioned six catagories, identified by numbered labels in the diagram.  Headings for each catagory are seen in this column, white text and gray background.</td>
+</tr>
+<tr>
+<td align="center"><code>B</code></td>
+<td align="center">Catagory ID</td>
+<td align="left">Data in this column is only required in the <strong>Investments</strong> catagory.  In the Investments catagory when a value is provided in this column the data for that row will be shown in the Investments tab.</td>
+</tr>
+<tr>
+<td align="center"><code>C</code></td>
+<td align="center">Description</td>
+<td align="left">A brief description of the assest or liability.</td>
+</tr>
+<tr>
+<td align="center"><code>D</code></td>
+<td align="center">Current<br>Value</td>
+<td align="left">The dollar amount for the entry defined on this row.</td>
+</tr>
+<tr>
+<td align="center"><code>E</code></td>
+<td align="center">Balance<br>Due</td>
+<td align="left">For the Real Estate and Vehicle catagories a balance due can be provided.</td>
+</tr>
+<tr>
+<td align="center"><code>F</code></td>
+<td align="center">Adjusted<br>Value</td>
+<td align="left">The calculated value for the row.  This is the Current Value minus the Balance Due <br>(or)<br>the same as the Current Value.</td>
+</tr>
+<tr>
+<td align="center"><code>G</code></td>
+<td align="center">Monthly<br>Payment</td>
+<td align="left">For the Real Estate and Vehicle catagories a Monthly Payment amount  can be provided.</td>
+</tr>
+<tr>
+<td align="center"><code>H</code></td>
+<td align="center">Catagory<br>Total</td>
+<td align="left">The sum of all rows in the related catagory.</td>
+</tr>
+<tr>
+<td align="center"><code>I</code></td>
+<td align="center">Asset/Liability<br>or Message</td>
+<td align="left">Messages that will be shown and description: <br>- <strong>Asset</strong>: this row is considered an asset.<br>- <strong>Liabiltiy</strong>: This row is considered a liability.<br>- <strong>?&nbsp;Balance with no payment&nbsp;?</strong>&nbsp;&nbsp;Balance Due has been provided by no Payment is entered.<br>- <strong>?&nbsp;Payment with no balance&nbsp;?</strong>&nbsp;&nbsp;Payment has been provided by no Balance Due  is entered.</td>
+</tr>
+<tr>
+<td align="center"><code>J</code></td>
+<td align="center">Date<br>Updated</td>
+<td align="left">Used to track when this row was changed.  This value is not used for any other calculation or on any other tab.</td>
+</tr>
+<tr>
+<td align="center"><code>K</code></td>
+<td align="center">Comments</td>
+<td align="left">Brief comments regarding the row.</td>
+</tr>
+</tbody>
+</table>
+<p align="center">
+  <img src="/images/macrosPrompt.png?raw=true" width="300" height="200">
+</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js" defer></script>
+        <script src="../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
