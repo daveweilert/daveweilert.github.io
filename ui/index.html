@@ -1,0 +1,734 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.9">
+    
+    
+      
+        <title>User Interface - Retirement Planner</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.1d29e8d0.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.cbb835fc.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#4cae4f">
+        
+      
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="https://daveweilert.github.io" title="Retirement Planner" class="md-header__button md-logo" aria-label="Retirement Planner" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Retirement Planner
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              User Interface
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://daveweilert.github.io" title="Retirement Planner" class="md-nav__button md-logo" aria-label="Retirement Planner" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Retirement Planner
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Welcome
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../overview/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        User Interface
+      </a>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../assets/" class="md-nav__link">
+        Assets
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../examples/" class="md-nav__link">
+        Examples
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+  <h1>User Interface</h1>
+
+<h2 id="common-ui-icons">Common UI Icons</h2>
+<p>Through out the tabs of this application are series of icons that are intended to assist in using the software.</p>
+<table>
+<thead>
+<tr>
+<th>Icon</th>
+<th align="left">Name</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="Decrease" src="../images/iconChevronDown.png" width="30" /></td>
+<td align="left">Down chevron</td>
+<td align="left">Decrease the associated value.</td>
+</tr>
+<tr>
+<td><img alt="Increase" src="../images/iconChevronUp.png" width="30" /></td>
+<td align="left">Down chevron</td>
+<td align="left">Increase the associated value.</td>
+</tr>
+<tr>
+<td><img alt="Eyeball" src="../images/iconEyeball.png" width="30" /></td>
+<td align="left">Eyeball</td>
+<td align="left">Toggle view/hide associated data.</td>
+</tr>
+<tr>
+<td><img alt="Green Gears" src="../images/iconGears.png" width="30" /></td>
+<td align="left">Green gears</td>
+<td align="left">Toggle view/hide the detailed retirement plan information.</td>
+</tr>
+<tr>
+<td><img alt="Green Calculator" src="../images/iconGreenCalculator.png" width="30" /></td>
+<td align="left">Green calculator</td>
+<td align="left">Invoke the create retirement plan process.</td>
+</tr>
+<tr>
+<td><img alt="Home" src="../images/iconHome.png" width="30" /></td>
+<td align="left">Home</td>
+<td align="left">Navigate to the Home tab.</td>
+</tr>
+<tr>
+<td><img alt="Lock" src="../images/iconLock.png" width="30" /></td>
+<td align="left">Lock</td>
+<td align="left">Toggle the lock/unlock of the tab to enable editing of the tab.</td>
+</tr>
+<tr>
+<td><img alt="Calculators" src="../images/iconMathSigns.png" width="30" /></td>
+<td align="left">Calculators</td>
+<td align="left">Navigate to the calculators tab.</td>
+</tr>
+<tr>
+<td><img alt="Notes" src="../images/iconNotes.png" width="30" /></td>
+<td align="left">Notes</td>
+<td align="left">Navigate to the Notes tab.</td>
+</tr>
+<tr>
+<td><img alt="Pencil" src="../images/iconPencil.png" width="30" /></td>
+<td align="left">Pencil</td>
+<td align="left">Navigate to the associated tab to view, enter, or update data.</td>
+</tr>
+<tr>
+<td><img alt="Report" src="../images/iconReport.png" width="30" /></td>
+<td align="left">Report</td>
+<td align="left">Navigate to the associated report tab.</td>
+</tr>
+<tr>
+<td><img alt="Return" src="../images/iconReturn.png" width="30" /></td>
+<td align="left">Home</td>
+<td align="left">Return to the previous tab.</td>
+</tr>
+<tr>
+<td><img alt="Home" src="../images/iconHome.png" width="30" /></td>
+<td align="left">Home</td>
+<td align="left">Navigate to the Home tab.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="tabs">Tabs</h2>
+<p>Once Retirement Planner is opened a default set of tabs are shown.  Other optional tabs are shown when a specifc function is selected or performed. The optional tab will be closed when the navigation return arrow is used.  If the navigation return arrow is not used the tab will remain open.  When Retirement Planner software is stopped and re-started all optional tabs will be closed.</p>
+<hr style="border:1px solid green">
+
+<h5 id="select-from-the-two-categories-below-to-view-the-list-of-associated-tabs-clicking-the-tab-name-will-navigate-to-additional-information-regarding-the-tab">Select from the two categories below to view the list of associated tabs. Clicking the tab name will navigate to additional information regarding the tab.</h5>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Default tabs</label><label for="__tabbed_1_2">Optional tabs</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<ul>
+<li><a href="#assets">Assets</a></li>
+<li><a href="#budget">Budget</a>  </li>
+<li><a href="#home">Home</a>  </li>
+<li><a href="#income">Income</a></li>
+<li><a href="#individuals">Individuals</a>  </li>
+<li><a href="#overview">Overview</a>  </li>
+<li><a href="#retire">Retire</a> </li>
+<li><a href="#useful-info">Useful Info</a></li>
+<li><a href="#home">Welcome</a>  </li>
+</ul>
+</div>
+<div class="tabbed-block">
+<ul>
+<li><a href="#colacpi">COLACPI</a> </li>
+<li><a href="#calculators">Calculators</a></li>
+<li><a href="#edata">EData</a></li>
+<li><a href="#export">Export</a></li>
+<li><a href="#housing">Housing</a></li>
+<li><a href="#irmaa">IRMAA</a></li>
+<li><a href="#importmsg">ImportMsg</a></li>
+<li><a href="#investments">Investments</a></li>
+<li><a href="#lifetables">LifeTables</a></li>
+<li><a href="#med-insur">Med-Insur</a></li>
+<li><a href="#notes">Notes</a></li>
+<li><a href="#rmd">RMD</a></li>
+<li><a href="#rmd-table">RMD Table</a></li>
+<li><a href="#rental">Rental</a></li>
+<li><a href="#ss-estimator">SS Estimator</a></li>
+<li><a href="#taxrates">TaxRates</a></li>
+<li><a href="#taxtables">TaxTables</a></li>
+<li><a href="#transportaion">Transportaion</a></li>
+</ul>
+</div>
+</div>
+</div>
+<hr style="border:1px solid green">
+
+<h2 id="default-tabs">Default tabs</h2>
+<hr />
+<h3 id="assets">Assets</h3>
+<p>Provides the ability to define twelve Investments accounts, five cash accounts, one housing, four vehicles, and two rental properties. The twelve investments must to be classified as either Before or After tax monies. If defined as Before tax the owning individual must also be defined.  </p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Housing, Vehicles, and Rental topics have icons that allow further editing.  The Investments topic also has an icon that can be used to view detailed information for each investment.</p>
+</div>
+<hr style="border-top: 1px solid green">
+
+<h3 id="budget">Budget</h3>
+<p>Enter budget data for multiple categories with detailed itemized entries.  Each detailed budget item can indicate frequency, dollar amount, whether impacted by inflation, and whether the budget item is required or optional.  </p>
+<p>For Housing, Medical Insurance, and Transportation categories the pencil icon enables entry of budget information for the category.  Access these category tabs by pressing the Pencil icon to the left of the associated section title.</p>
+<p>The eyeball icon in the upper portion is used to toggle the viewing of three columns of information.  These columns are:</p>
+<ul>
+<li>(+/-) Monthly Adjust at Retirement - A positive or negative dollar amount to adjust the line item at retirement.</li>
+<li>Projected Retirement Monthly $ - The monthly amount for this line item at retirement.</li>
+<li>Projected Retirement Annual $ - The annual amount for this line item at retirement. </li>
+</ul>
+<p>A red text message in the upper portion of the screen will be dispalyed if any line item has a value in the column (+/-) Monthly Adjust at Retirement.  The following displayed message is informational only.</p>
+<p align="center">
+  <img src="/images/adjustmentMessage.png?raw=true" width="500">
+</p>
+
+<hr style="border-top: 1px solid green">
+
+<h3 id="home">Home</h3>
+<p>Provides a collection of graphs and a single report to help in understanding the generated plan. Navigatio to other tabs using the left-hand navigation buttons is also provided from this tab.     </p>
+<p>Informational and warning messages are also shown in the upper region of the screen.  Note that when the message ""Press calculator to update financials"" with red background is displayed you must press the green calculator to ensure accurate financial information is shown.  </p>
+<p>When the message ""Financial information has changed, the chart or report should be generated again."" with yellow background is displayed you should re-select the shown graph or report to generate an updated view.   The name of the current graph or report is shown in the upper right corner of the screen.    </p>
+<p>Included graphs and report are: </p>
+<dl>
+<dt><code><ins class="critic"> Lifetime Investments &amp; Assets </ins></code></dt>
+<dd>
+<p>A stacked bar chart for each associated item from the current year to age 100 of the youngest of the individuals defined on the Individual tab.</p>
+</dd>
+<dt><code><ins class="critic"> 30 Year Financial </ins></code> </dt>
+<dd>
+<p>A line chart that is based on the defined start retirement year as the first year.</p>
+</dd>
+<dt><code><ins class="critic"> 30 Year Income </ins></code></dt>
+<dd>
+<p>A stacked bar chart of all income types defined on the Income tab.  Starts with current year.</p>
+</dd>
+<dt><code><ins class="critic"> Budget Current &amp; Future </ins></code></dt>
+<dd>
+<p>This graph is either two or three pie charts.  Only two pie charts will be shown if retirement has already started.  If yet to start retirement a third pie chart will be shown that has the estimated budget at start year of retirement.</p>
+</dd>
+<dt><code><ins class="critic"> 30 Year Budget Trend </ins></code></dt>
+<dd>
+<p>A combination of line and bar charts.  These charts start with the retirement year if in the future of current year is already started retirement.</p>
+</dd>
+<dt><code><ins class="critic"> 30 Year Home &amp; Rentals </ins></code></dt>
+<dd>
+<p>A line chart with home and if defined, rentals.  This chart starting with current year.</p>
+</dd>
+<dt><code><ins class="critic"> Checklist Report </ins></code></dt>
+<dd>
+<p>Produces one or more line items with the results of rules that that check logic relationships and values entered.</p>
+</dd>
+</dl>
+<p>The user may also modify the Average Rate of Return, Inflation Rate, and Retirement Start Year using the green up chevrons or the red down chevrons.</p>
+<hr style="border-top: 1px solid green">
+
+<h3 id="income">Income</h3>
+<p>Define estimated or actual incomes that are currently being received or expected to be received during retirement. Monthly dollar amounts, start date, end date, COLA (Cost of Living Adjustment), and percent taxable can be defined as applicable.  Incomes can include Social Security, Railroad Retirement, Government, Teacher pension, qualified pensions, annuities, rental, employment, and one time annual supplementals.  </p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Consider using the Social Security Estimator to help determine what amounts may be appropriate to enter for Social Security.</p>
+</div>
+<hr style="border-top: 1px solid green">
+
+<h3 id="individuals">Individuals</h3>
+<p>Enter data for one or two individuals.  The data consists of name, date of birth, hopeful retirement date, a target retirement year, and tax filing status and state.  The year entered in the Date of birth will be used to calculate the individuals age in a specific year.  The Retirement Planning Year will be used as the start year for calculations regarding data for retirement.  Once the tax status and state are selected be sure to press the button <strong>Update tax tables</strong>.  </p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>The hopeful retirement date is only used to calculate the values shown on this tab for the fields months and days till retirement. </p>
+</div>
+<p><br></p>
+<p><img align="right" alt="TaxTables" src="/images/taxTableMessage.png?raw=true" width="400" /></p>
+<p>A warning message will be shown if the selected tax status and state do not match the tables loaded for calculations. </p>
+<p><br></p>
+<p><img align="right" alt="TaxTables" src="/images/updateTaxesButton.png?raw=true" width="200" /></p>
+<p>Press the Update tax tables button to update the tax tables and remove the warning message.</p>
+<hr style="border-top: 1px solid green">
+
+<h3 id="overview">Overview</h3>
+<p>Information regarding how to interact, learn, and upgrade Retirement Planner.</p>
+<hr style="border-top: 1px solid green">
+
+<h3 id="retire">Retire</h3>
+<p>Create the retirement plan, an overview spanning forty years.  The plan is provided with Investment balances, withdrawal amounts, budget, and budget adjustments.  </p>
+<p>The withdrawal amount is either the amount needed to meet budget requirements or that plus any additional amount must be withdrawn to meet the IRS Required Minimum Deduction (RMD). </p>
+<p>Toggle the eyeball icon and/or green gears icon to view or suppress addditional detail financial data.  Scroll to the right for the additional detail information.</p>
+<p>The following messages and and popups can occur on the Retire tab:</p>
+<p><img align="left" alt="StoppedCalculations" src="/images/retireCalculationsStopped.png?raw=true" width="175" /></p>
+<p>If there are insufficent funds in the investments to span the forty years a message will be displayed to indicate the calculations ahve been stopped.  </p>
+<p><br><br></p>
+<p><img align="left" alt="ExceedsFunding" src="/images/retireExceedsNeedsMessage.png?raw=true" width="175" /></p>
+<p>Income monies for one or more years exceed the budget needs resulting in a negative withdrawl amount. </p>
+<p><br><br><br></p>
+<p><img align="left" alt="PressCalculator" src="/images/retirePressCalculator.png?raw=true" width="175" /></p>
+<p>The green calculator icon/button needs to be pressed to update all financials and invoke the create plan process.  This message will be cleared once processing is completed.</p>
+<p><br></p>
+<p><img align="left" alt="UpdatingRow" src="/images/retireRowMessage.png?raw=true" width="175" /></p>
+<p>Current row of the plan that is being processed.  If all rows are successfully processed the message will be cleared from the screen.</p>
+<hr style="border-top: 1px solid green">
+
+<h3 id="useful-info">Useful Info</h3>
+<p>Reports and Calculators are provided to aid in understanding factors related to creating a robust retirement plan.</p>
+<hr style="border-top: 1px solid green">
+
+<h3 id="welcome">Welcome</h3>
+<p>General information regarding the Retirement Planning software.</p>
+<hr style="border-top: 1px solid green">
+
+<h2 id="optional-tabs">Optional tabs</h2>
+<hr style="border-top: 1px solid green">
+
+<h3 id="colacpi">COLACPI</h3>
+<p>Provides Social Secuirty Cost of Living Adjustment (COLA) and Consumer Price Index (CPI) information. </p>
+<p>The data in the CPI table is also used to calculate the average inflation rate for the last ten years.  The calculated value is then used to determine if the defined inflation rate for the retirement is more than one percent more or less.  If the defined inflation rate is more or less than one percent difference this difference is reported when creating the Checklist Report from the Home tab.  </p>
+<p>These tables can be updated by the user.  Use of the lock in the upper portion of the screen to allow editing.</p>
+<p>This tab is accessed from Useful Info tab.</p>
+<hr style="border-top: 1px solid green">
+
+<h3 id="calculators">Calculators</h3>
+<p>Multiple calculators for use in understanding the following:</p>
+<pre><code>1) Present value  
+2) Future value  
+3) Mortgage Payment  
+4) Vehicle Payment  
+5) Investment Fee Impact  
+6) Rate of Return (Overall &amp; Annual)
+</code></pre>
+<p>This tab is accessed from Useful Info tab.</p>
+<hr style="border-top: 1px solid green">
+
+<h3 id="edata">EData</h3>
+<p>A tab used to aid with importing or exporting data for this software.  The data in this tab has been obtained from user entered data in this spread sheet, "Retirement Planner".  The data can be imported to a newer version of "Retirement Planner".  Copy the data in rows 5 to the last row containing data.  Open the newest version of "Retirement Planner", select "Welcome", scroll to the bottom of the tab and press the button "Open EData".  Remove the existing data if any, and paste the copied data into the  spreadsheet.  Close the EData tab in the latest version of "Retirement Planner" by pressing the return arrow.  Once closed you should be in the "Welcome" tab again, press the "Import Data" button.  It will take several seconds to multiple minutes import the data.  </p>
+<p>This tab is accessed from the Overview tab.</p>
+<hr style="border-top: 1px solid green">
+
+<h3 id="housing">Housing</h3>
+<p>Enter your housing related information in this tab.  Expenses for housing are entered in the top portion of this tab.  The expense data is copied to the HOUSING section of the Budget tab as read only data.</p>
+<p>If you own a home be sure enter the related information.  If you plan to sell your home in the future also enter that related information.</p>
+<p>Access this tab from the following locations: </p>
+<p>1) The HOUSING section of the Budget tab.
+2) The HOUSING section of the Assets tab.  </p>
+<hr style="border-top: 1px solid green">
+
+<h3 id="irmaa">IRMAA</h3>
+<p>Information for Medicare Income Related Monthly Adjustment Amount (IRMAA).  The income related monthly adjustment amount (IRMAA) sliding scale is a set of statutory percentage-based tables used to adjust Medicare Part B and Part D prescription drug coverage premiums. The higher the beneficiary's range of modified adjusted gross income (MAGI), the higher the IRMAA. </p>
+<p>This tables can be updated by the user.  Use of the lock in the upper portion of the screen to allow editing.</p>
+<p>This tab is accessed from Useful Info tab.</p>
+<hr style="border-top: 1px solid green">
+
+<h3 id="importmsg">ImportMsg</h3>
+<p>Provides status information once the 'Import Data' button from the Overview tab has been pressed.  All status lines will not be shown when the import process is started.  Status data will be shown as each tab of import data is processed.  The following image is similar to what will be show.</p>
+<p><img alt="ImportMsg" src="../images/importMsg.png" /></p>
+<hr style="border-top: 1px solid green">
+
+<h3 id="investments">Investments</h3>
+<p>This tab provides the estimated annaul changes in each investment that is defined in the INVESTMENTS section of the Assets tab.  The defined target retirement year is indicated by the value '==&gt;' shown in the column titled <strong>Retire target year</strong>.   </p>
+<p><img alt="ImportMsg" src="../images/investments.png" /></p>
+<hr style="border-top: 1px solid green">
+
+<h3 id="lifetables">LifeTables</h3>
+<p>Life expectancy information tables that are available from the Nation Vital Statistics reports.  URL links to the data sources are provided.</p>
+<p>This tables can be updated by the user.  Use of the lock in the upper portion of the screen to allow editing.</p>
+<p>This tab is accessed from Useful Info.</p>
+<hr style="border-top: 1px solid green">
+
+<h3 id="med-insur">Med-Insur</h3>
+<p>Detailed medical expense information for one or two individuals.  The upper portion of the tab is the combined costs from the individual sections in the lower portion of the tab.  The combined expense data is included in the Budget tab.  The medical expenses can only be edited from this tab.  </p>
+<p>This tab is accessed by pressing the Pencil icon in the left-hand column of the MED-INSUR section of the Budget tab. </p>
+<hr style="border-top: 1px solid green">
+
+<h3 id="notes">Notes</h3>
+<p>User entered notes or comments.  The entered data can be used as needed by the user.  </p>
+<p>This tab is accessed from Useful Info.</p>
+<div class="admonition danger">
+<p class="admonition-title">CAUTION</p>
+<p>The data entered on the <strong>Notes</strong> tab will NOT be migrated using the Export data feature from the Overview tab.</p>
+</div>
+<hr style="border-top: 1px solid green">
+
+<h3 id="rmd">RMD</h3>
+<p>This tab provides the calculated IRS required distribution that must be taken from "BEFORE TAX" investments based on an individuals age.  Calculated amounts to withdrawl for each individual.</p>
+<p>This tab is accessed from the Retire tab by pressing the Eyeball icon in the column titled <strong>RMD Event</strong>.</p>
+<div class="admonition info">
+<p class="admonition-title">RMD shoud be taken seriously</p>
+<p>If monies are not taken there is a significant penalty.  There may be a 50 percent excise tax on the amount not distributed as required﻿, according to the IRS.</p>
+</div>
+<hr style="border-top: 1px solid green">
+
+<h3 id="rmd-table">RMD Table</h3>
+<p>An RMD is the annual Required Minimum Distribution that you must start taking out of your retirement account after you reach age 70 or 72. Refer to the trigger date for when the age moves from 70 to 72.  The amount is determined by the fair market value of your IRAs at the end of the previous year, factored by your age and life expectancy.  The IRS penalty for not taking an RMD, or for taking less than the required amount, is steep: 50% of the amount not taken on time. The deadline to take your first RMD is normally April 1 of the year after you turn 72, and December 31 each following year.</p>
+<p>This table can be updated by the user.  Use of the lock in the upper portion of the screen to allow editing.</p>
+<p>This tab is accessed from Useful Info.</p>
+<hr style="border-top: 1px solid green">
+
+<h3 id="rental">Rental</h3>
+<p>If you own rental property this tab is used to enter related information.  The information is used to calculate rental income and appreciation of rental property.  The 'Combined yearly Total' amount is transferred to the Rental section of the Income tab. Rental property is included in the calculation of total assets.</p>
+<p>This tab is accessed by pressing the Pencil icon in the upper left portion of the Income tab.  The icon is labeled <strong>Estimate Social Security</strong>.</p>
+<hr style="border-top: 1px solid green">
+
+<h3 id="ss-estimator">SS Estimator</h3>
+<p>This tab is used to determine an estimated amount of Social Security benefit that will be received.  This estimate requires the user to obtain their Full Retirement Amoutn (FRA) from the Social Security Administration.  </p>
+<p>The calculated amount will use the FRA as the base to determine if the benefit amount should be less or more than the FRA based on the target date to retire.  If a user has not reached the FRA year and month the benefit will be less than the FRA.  If the retirement date is later than the FRA year and month the benefit will be larger.</p>
+<p>This amount can then be used as an estimate on the Income tab.</p>
+<p>This tab is accessed from the RENTAL section of the Assets tab or from the Income tab by pressing the Pencil icon labled __Detail </p>
+<hr style="border-top: 1px solid green">
+
+<h3 id="taxrates">TaxRates</h3>
+<p>Income tax rates for Federal, State, County, and City can be defined and then calculated as applicable to your location.  This tab displays the values to be used for the tax calculations.  </p>
+<p>From the Income Tax section of the Individuals tab the proper filing status and state can be defined.  Pressing the 'Update tax tables' button is required.  A warning message will be displayed if the tax tables are not updated to match the selected values.</p>
+<p>County and City tax table information must be manually entered on this tab.  Entry of either County or City tax rates also requires updating of the tax rates.  No warning message to update the tax tables will be displayed if either the County or City taxes are entered or updated. </p>
+<p>Access this tab from the following locations: </p>
+<p>1) Pressing the Pencil icon in the left column of the Income Tax section of the Individuals tab.<br />
+2) Pressing the Pencil icon in the upper middle portion of the Income tab.</p>
+<hr style="border-top: 1px solid green">
+
+<h3 id="taxtables">TaxTables</h3>
+<p>Individual and joint tax rate tables for Federal, state and Washington D.C.  The data from these tables is used to populated the TaxRates tab when the Update tax tables button from the Individuals tab is pressed.</p>
+<p>This table can be updated by the user.  Use of the lock in the upper portion of the screen to allow editing.</p>
+<p>This tab is accessed from Useful Info tab.</p>
+<hr style="border-top: 1px solid green">
+
+<h3 id="transportaion">Transportaion</h3>
+<p>Detailed transportaion expense information for one to four vehicles can be entered in the lower portion portion of this tab.  The entered amount is the combined amount for all vehicles.  The upper portion of this tab is the individual vehicle information from the VEHICLES section of the Assets tab.  </p>
+<p>The combined expense data is included in the Budget tab.  The vehicle expenses can only be edited from this tab.  </p>
+<p>Access this tab from the following locations: </p>
+<p>1) Pressing the Pencil icon in the left-hand column of the VEHICLES section of the Assets tab.<br />
+2) Pressing the Pencil icon in the left-hand column of the TRANSPORTATION section of the Budget tab. </p>
+<hr style="border-top: 1px solid green">
+
+              
+            </article>
+            
+          </div>
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../overview/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Overview" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Overview
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../assets/" class="md-footer__link md-footer__link--next" aria-label="Next: Assets" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Assets
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2020 - 2022 Dave Weilert (DByDW)
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.top", "content.code.annotate", "content.tooltips", "navigation.indexes", "navigation.sections", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.6c7ad80a.min.js"></script>
+      
+    
+  </body>
+</html>
