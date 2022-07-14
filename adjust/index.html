@@ -13,7 +13,7 @@
     
     
       
-        <title>Overview - Retirement Planner</title>
+        <title>Working with the plan - Retirement Planner</title>
       
     
     
@@ -93,7 +93,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Overview
+              Working with the plan
             
           </span>
         </div>
@@ -197,19 +197,11 @@
 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../overview/" class="md-nav__link">
         Overview
       </a>
-      
     </li>
   
 
@@ -235,11 +227,19 @@
 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../adjust/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Working with the plan
       </a>
+      
     </li>
   
 
@@ -304,46 +304,72 @@
                 
 
 
-  <h1>Overview</h1>
+  <h1>Working with the plan</h1>
 
-<h2 id="starting-the-software">Starting the software</h2>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>All screen images shown in this documentation are taken while using Microsoft &reg; Excel for Mac. Screens for Microsoft &reg; Excel running on  Microsoft Windows will be different.</p>
-</div>
-<p>This software is a spreadsheet built using Microsoft &reg; Excel with macros used for many of the features.  The use of macros within a spreadsheet will cause a warning message and prompt the user about there use. </p>
-<p><img align="right" alt="ImportMsg" src="../images/allMacrosPrompt.png" width="300" /></p>
-<p>For this software to fully function the spreadsheet macros must be enabled.  This is the message prompt that is shown when starting Retirement Planner. Press the <strong>Enable Macros</strong> button to continue with all features enabled.  </p>
-<p><br><br><br><br></p>
-<p><img align="right" alt="DisabledMacros" src="../images/allDisabledMacros.png" width="175" /></p>
-<p>If the Disable Macros button was pressed this will render features of the software as non-fucntional. </p>
-<p>This message box will be shown when attempting to execute a feature and macros have been disabled.  </p>
-<p><br></p>
-<h2 id="protected-startup">Protected startup</h2>
-<p>Each time the software is started, with macros enabled, a macro is executed that protects all tabs with a default password. If macros are not enabled no protection of tabs is performed and the default tab will be the last used tab when the software was closed. </p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Default password is: <strong>retire</strong> (all lowercase letters)</p>
-</div>
-<p>At any time, any tab can be unprotected thus allowing changes to protected areas or features of the tab.  If the tab is then re-protected and a different password is used that new password will be reset to the default password when the software is closed and started.  This reset of passwords feature is to prevent forgetting a newly used password and guarentee protection of tabs.</p>
-<h2 id="first-screen">First screen</h2>
-<p><img align="left" alt="ImportMsg" src="../images/allStartupFirstScreen.png" width="500" /></p>
-<p>After responding to the above prompt and enabling macros; the first screen that is shown is the Home tab.  A new informational message box is shown.  This informs the user that the green calculator icon on this tab and the Retire tab must be pressed when prompted.  The prompt will be a message with red background indicating the green calculator icon should be pressed. </p>
-<p>To continue and use this software press the OK button.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>For a description of this Home tab or any other tab refer to the <a href="/ui">User Interface</a> section of this documentation, select <strong>Tab detail</strong>, and select the tab name to view the tab information.</p>
-</div>
-<h2 id="getting-started-with-example-scenarios-and-data">Getting started with example scenarios and data</h2>
-<p>Several pieces of data are needed to create a useful retirement plan.  Data must be entered on multiple tabs in the spreadsheet e.g. Individuals, Assets, Budget, etc. </p>
-<p>Refer to the <a href="/ui">User Interface</a> portion of this documentation for a description of the tabs used in this software.</p>
-<h3 id="scenarios">Scenarios</h3>
-<p>On the Overview tab as a starting point four scenarios with sample data are provided.  These scenarios can be loaded and reviewed or modified to gain familiarity and understanding of the software.  On the Overview tab scroll to the section where the green scenario buttons are located.  Click on any one of the buttons to load the associated data.  </p>
-<p><img alt="ImportMsg" src="../images/overviewScenarios.png" width="600" /></p>
-<p>When done exploring one scenario, if desired, another scenario can be loaded and reviewed.  It is important to understand that when loading a scenario all existing data will be over-written.</p>
-<h3 id="create-plan">Create plan</h3>
-<p>This software has no capability to clear all data.  To get started with a retirement plan it is recommended to select and load a scenario as a starting point, then modify as needed.  </p>
-<hr style="border:1px solid green">
+<p>Retirement Planner software provides several capabilities to enter and modify data.  This topic will provide information about what data can or should be changed to evaluate possible <strong>what if</strong> options in the plan.  </p>
+<p>As mentioned in the <a href="/welcome">Welcome</a> topic of this documentation there are three points of contorl provided 1) Retirement Year, 2) Average Rate of Return, and 3) Annual Inflation Rate.  Other than adjusting these points of control what other ways are there to evaluate the <strong>what if</strong> of retirement. </p>
+<p>The following topics discuss control points and user entered data for expenses and income.</p>
+<h2 id="expenses">Expenses</h2>
+<h3 id="control-point">Control Point</h3>
+<p>The software automatically adjusts the annual expenses to increase by the inflation rate. Adjusting the annual inflation rate can either increase or decrease expenses based on the adjustment.  Use the colored chevrons on the Home or Retire tabs to adjust the annual inflation rate.</p>
+<h3 id="user-entered-data">User entered data</h3>
+<p>The Budget tab is the core source of information used to determine expenses. Though more than on tab can be used to enter expense related information.Consider the following:</p>
+<table>
+<thead>
+<tr>
+<th align="left">Tab</th>
+<th align="left">Describe</th>
+<th align="left">Entry / Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Budget</td>
+<td align="left">Expenses are occuring now.</td>
+<td align="left">Enter in the Budget tab using the standard input fields. Ensure the expense amount and annual frequency are correct.</td>
+</tr>
+<tr>
+<td align="left">Budget</td>
+<td align="left">One or more expenses will be different at retirement.</td>
+<td align="left">For the specific line item on the Budget tab use the field in the column <strong>(+/-) Monthly Adjust at Retirement</strong> to modify the expense amount. To properly adjust the budget ensure the value is entered as a monthly amount.</td>
+</tr>
+<tr>
+<td align="left">Housing<br><br>Transportation<br><br>Med-Insur</td>
+<td align="left">Expenses have increased for the category.</td>
+<td align="left">From the Budget tab select the pencil icon for the appropriate tab.  Modify the expenses as needed.</td>
+</tr>
+<tr>
+<td align="left">Retire</td>
+<td align="left">After retirement starts the annual budget needs to increase or decrease for a single year.</td>
+<td align="left">From the Retire tab, in the column titled <strong>Single Year Monthly Budget Adj. (+/-)</strong>, locate the year the adjustment is needed and enter the monthly adjusment amount.  <br><br> Example adjustments: <br> * Increase in medical insurance premiums till Medicare is available. <br> * Increase the budget to cover car payments.  If finance over a period of years create adjustments for multiple years. <br> *  Decrease the budget because a one time rebate will be received.</td>
+</tr>
+<tr>
+<td align="left">Retire</td>
+<td align="left">After retirement starts the annual budget needs to increase or decrease for all future years.</td>
+<td align="left">From the Retire tab, in the column titled <strong>Multi-year Monthly Budget Adj. (+/-)</strong>, locate the start year for the adjustment and enter the monthly adjusment amount.  <br><br> Example adjustments: <br> * House mortgage will be paid off. <br> * Planning to sell a car, boat, or other property.  <br> *  Project a slow down in activities as one ages.</td>
+</tr>
+<tr>
+<td align="left">Rental</td>
+<td align="left">Rental property maintenance costs are increasing.</td>
+<td align="left">Access the Rental tab from either the Assets or Income tabs.  For the appropriate rental property modify the field(s) <strong>Annual Repairs</strong> and/or <strong>Expenses Increase %</strong> to reflect the increase.  This change to annual repairs will impact the calculated Yearly Net Income for the associated rental property and the net amount will be reflected on the Income tab.  With information form the Income tab used to calculate the Retirement Plan.</td>
+</tr>
+<tr>
+<td align="left">Individuals</td>
+<td align="left">Income tax filing status or state has changed.</td>
+<td align="left">From the drop-down selection fields <strong>Status and/or State</strong> on the Individuals tab modify the tax filing information.</td>
+</tr>
+<tr>
+<td align="left">TaxRates</td>
+<td align="left">City or County taxes have changed.</td>
+<td align="left">From either the Individuals or Income tab click the pencil to open Detail Tax Data.  Modify the city or county taxes as required.  The button labeled 'Update tax tables' must be pressed to update the tax calculation formulas.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="rmd-related">RMD related</h4>
+<p>During the plan generation the Required Minimum Distribution (RMD) amount may not be met resulting in an adjustment of additional funds needing to be withdrawn from Before tax investments.  Taxes for this adjustment amount will be subtracted from the total adjustment amount and the net difference added to the After tax balance for future use.</p>
+<hr />
+<h2 id="income">Income</h2>
+<p>TBDS -  To be done soon</p>
 
               
             </article>
@@ -364,7 +390,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer" >
       
         
-        <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Previous: Welcome" rel="prev">
+        <a href="../ui/" class="md-footer__link md-footer__link--prev" aria-label="Previous: User Interface" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -373,20 +399,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Welcome
+              User Interface
             </div>
           </div>
         </a>
       
       
         
-        <a href="../ui/" class="md-footer__link md-footer__link--next" aria-label="Next: User Interface" rel="next">
+        <a href="../faq/" class="md-footer__link md-footer__link--next" aria-label="Next: FAQ" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              User Interface
+              FAQ
             </div>
           </div>
           <div class="md-footer__button md-icon">
